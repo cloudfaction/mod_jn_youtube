@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.0" client="site" method="upgrade">
+    <name>Youtube module</name>
+    <author>Maarten Blokdijk</author>
+    <creationDate>2019</creationDate>
+    <copyright>Copyright (C) 2019 joonextpro.com</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>hello@joonext.com</authorEmail>
+    <authorUrl>www.joonextpro.com</authorUrl>
+    <version>1.0</version>
+    <description>Add a youtube movie to your site with this module</description>
+    <files>
+        <filename module="mod_jn_youtube">mod_jn_youtube.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_jn_youtube.xml</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <folder>tmpl</folder>
+
+
+    </files>
+    <updateservers>
+        <server type="extension" name="joonext updates">https://www.joonextpro.com/extension_updates/mod_jn_youtube/extension.xml</server>
+    </updateservers>
+
+    <config>
+        <fields name="params">
+                <fieldset name="basic">
+                  <field name="jn_youtube_height" type="text" default="600px" label="Movie Height"  description="Iframe Height in pixels (add px) or percentage (add %)." />
+                  <field name="jn_youtube_width" type="text" default="100%" label="Movie width"  description="Iframe width in pixels (add px) or percentage (add %)." />
+                  <field name="jn_youtube_file" type="text" label="Movie ID" default="vlDzYIIOYmM" description="This is the id of your movie, in you movie URL the v= value." />
+                  <field name="jn_use_privacy" type="radio" class="btn-group btn-group-yesno" default="0" label="Use privacy" description="Use the no-cookie option">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				  </field>
+                  <field name="jn_youtube_startsecond" type="number" label="Startsecond " default="0" description="Set the startsecond of your movie" />
+                  <field name="jn_youtube_css" type="textarea" rows="10" cols="5" filter="raw" label="Extra css" default="box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);" description="Extra css for the movie element" />
+
+                </fieldset>
+               
+
+        </fields>
+    </config>
+</extension>

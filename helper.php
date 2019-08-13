@@ -14,7 +14,8 @@ defined('_JEXEC') or die;
 $jn_youtube_height        = $params->get('jn_youtube_height','600px');
 $jn_youtube_width         = $params->get('jn_youtube_width','100%');
 $jn_youtube_file          = $params->get('jn_youtube_file','vlDzYIIOYmM');
-$jn_use_privacy           = $params->get('jn_use_privacy','1');
+$jn_autoplay              = $params->get('jn_autoplay','0');
+$jn_audio_only            = $params->get('jn_audio_only','0');
 $jn_youtube_startsecond   = $params->get('jn_youtube_startsecond','0');
 $jn_youtube_css           = $params->get('jn_youtube_css','background: rgba(0, 0, 0, 0,5); box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0,5);');
 ?>

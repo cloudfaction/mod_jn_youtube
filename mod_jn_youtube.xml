@@ -30,7 +30,11 @@
                   <field name="jn_youtube_height" type="text" default="600px" label="Movie Height"  description="Iframe Height in pixels (add px) or percentage (add %)." />
                   <field name="jn_youtube_width" type="text" default="100%" label="Movie width"  description="Iframe width in pixels (add px) or percentage (add %)." />
                   <field name="jn_youtube_file" type="text" label="Movie ID" default="vlDzYIIOYmM" description="This is the id of your movie, in you movie URL the v= value." />
-                  <field name="jn_use_privacy" type="radio" class="btn-group btn-group-yesno" default="0" label="Use privacy" description="Use the no-cookie option">
+                  <field name="jn_autoplay" type="radio" class="btn-group btn-group-yesno" default="0" label="Use autplay" description="Use autoplay">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				  </field>
+                  <field name="jn_audio_only" type="radio" class="btn-group btn-group-yesno" default="0" label="Use audio only" description="Use audio only, hide the visible movie">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				  </field>

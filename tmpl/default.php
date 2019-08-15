@@ -24,7 +24,7 @@ if($jn_audio_only=='0'):
 
 <div class="youtube-iframer">
 
-<iframe width="<?php echo $jn_youtube_width?>" height="<?php echo $jn_youtube_height?>" src="https://www.youtube.com/embed/<?php echo $jn_youtube_file?>?start=<?php echo $jn_youtube_startsecond?><?php if($jn_autoplay=='1'):?>&autoplay=1<?php endif;?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="<?php echo $jn_youtube_width?>" height="<?php echo $jn_youtube_height?>" src="https://www.youtube.com/embed/<?php echo $jn_youtube_file?>?start=<?php echo $jn_youtube_startsecond?><?php if($jn_autoplay=='1'):?>&autoplay=1<?php endif;?><?php if($jn_loop=='1'):?>&loop=1&playlist=<?php echo $jn_youtube_file?><?php endif;?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 

@@ -34,6 +34,10 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				  </field>
+                <field name="jn_loop" type="radio" class="btn-group btn-group-yesno" default="0" label="Loop video" description="Loop the video">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				  </field>
                   <field name="jn_audio_only" type="radio" class="btn-group btn-group-yesno" default="0" label="Use audio only" description="Use audio only, hide the visible movie">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
